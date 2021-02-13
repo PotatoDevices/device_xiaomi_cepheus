@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_cepheus.mk
+    $(LOCAL_DIR)/aosp_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_cepheus-user \
-    revengeos_cepheus-userdebug \
-    revengeos_cepheus-eng
+    aosp_cepheus-user \
+    aosp_cepheus-userdebug \
+    aosp_cepheus-eng
