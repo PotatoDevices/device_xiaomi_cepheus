@@ -32,8 +32,6 @@
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
-#include <sys/stat.h>
-#include <sys/types.h>
 
 #include "vendor_init.h"
 
@@ -49,39 +47,6 @@ std::vector<std::string> ro_props_default_source_order = {
     "vendor.",
 };
 
-/* From Magisk@jni/magiskhide/hide_utils.c */
-static const char *snet_prop_key[] = {
-    "ro.boot.vbmeta.device_state",
-    "ro.boot.verifiedbootstate",
-    "ro.boot.flash.locked",
-    "ro.boot.selinux",
-    "ro.boot.veritymode",
-    "ro.boot.warranty_bit",
-    "ro.warranty_bit",
-    "ro.debuggable",
-    "ro.secure",
-    "ro.build.type",
-    "ro.build.tags",
-    "ro.build.selinux",
-    NULL
-};
-
-static const char *snet_prop_value[] = {
-    "locked",
-    "green",
-    "1",
-    "enforcing",
-    "enforcing",
-    "0",
-    "0",
-    "0",
-    "1",
-    "user",
-    "release-keys",
-    "1",
-    NULL
-};
-
 void property_override(char const prop[], char const value[], bool add = true)
 {
     prop_info *pi;
@@ -90,14 +55,6 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_update(pi, value, strlen(value));
     else if (add)
         __system_property_add(prop, strlen(prop), value, strlen(value));
-}
-
-static void workaround_snet_properties()
-{
-    // Hide all sensitive props
-    for (int i = 0; snet_prop_key[i]; ++i) {
-        property_override(snet_prop_key[i], snet_prop_value[i]);
-    }
 }
 
 void set_ro_build_prop(const std::string &prop, const std::string &value) {
@@ -121,11 +78,8 @@ void vendor_load_properties() {
     set_ro_product_prop("device", "cepheus");
     set_ro_product_prop("model", "MI 9");
     set_ro_product_prop("name", "cepheus");
-    set_ro_build_prop("fingerprint", "google/coral/coral:11/RQ1A.210205.004/7038034:user/release-keys");
+    set_ro_build_prop("fingerprint", "Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/21.2.3:user/release-keys");
 
-    // fingerprint
+    // description
     property_override("ro.build.description", "cepheus-user 11 RKQ1.200826.002 21.2.3 release-keys");
-
-    // Workaround SafetyNet
-    workaround_snet_properties();
 }
