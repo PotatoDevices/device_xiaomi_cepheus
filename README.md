@@ -1,6 +1,6 @@
 Copyright &copy; 2020 DerpFest
 
-Copyright &copy; 2020 RevengeOS
+Copyright &copy; 2020-2021 PixelExperience
 
 Device configuration for Xiaomi Mi 9
 =========================================
