@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libshim_megvii \
-    libmedia_jni_shim
+    libmedia_jni_shim \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -271,16 +271,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.cepheus
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service.cepheus
-
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
+    libmm-omxcore \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
@@ -353,7 +349,6 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
 
 # Power
 PRODUCT_PACKAGES += \
@@ -422,6 +417,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/xiaomi
+
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msmnile
 
 # Telephony
 PRODUCT_PACKAGES += \

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_cepheus.mk
+    $(LOCAL_DIR)/potato_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_cepheus-user \
-    revengeos_cepheus-userdebug \
-    revengeos_cepheus-eng
+    potato_cepheus-user \
+    potato_cepheus-userdebug \
+    potato_cepheus-eng

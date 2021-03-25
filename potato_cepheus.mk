@@ -21,15 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common Revenge stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier
-PRODUCT_NAME := revengeos_cepheus
+PRODUCT_NAME := potato_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
