@@ -1,0 +1,40 @@
+[
+  {
+    "repository"  : "PotatoDevices/vendor_xiaomi_cepheus",
+    "target_path" : "vendor/xiaomi/cepheus"
+  },
+  {
+    "repository"  : "PotatoDevices/kernel_xiaomi_cepheus",
+    "target_path" : "kernel/xiaomi/cepheus"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "evasi0n-wip"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "Giovix92/vendor_xiaomi_firmware",
+    "target_path": "vendor/xiaomi/cepheus-firmware",
+    "branch": "master"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_qcom-caf_sm8150_display",
+    "target_path": "hardware/qcom-caf/sm8150-cepheus/display",
+    "branch": "dumaloo-release"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_qcom-caf_sm8150_media",
+    "target_path": "hardware/qcom-caf/sm8150-cepheus/media",
+    "branch": "rippa-R-8150"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_qcom-caf_sm8150_audio",
+    "target_path": "hardware/qcom-caf/sm8150-cepheus/audio",
+    "branch": "rippa-R-8150"
+  }
+]
