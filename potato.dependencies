@@ -23,7 +23,7 @@
     "remote": "github",
     "repository": "sm8150-common/hardware_qcom-caf_sm8150_display",
     "target_path": "hardware/qcom-caf/sm8150-cepheus/display",
-    "branch": "fluid-11"
+    "branch": "dumaloo-release"
   },
   {
     "remote": "github",
