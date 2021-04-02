@@ -18,5 +18,23 @@
     "repository": "Giovix92/vendor_xiaomi_firmware",
     "target_path": "vendor/xiaomi/cepheus-firmware",
     "branch": "master"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_qcom-caf_sm8150_display",
+    "target_path": "hardware/qcom-caf/sm8150-cepheus/display",
+    "branch": "fluid-11"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_qcom-caf_sm8150_media",
+    "target_path": "hardware/qcom-caf/sm8150-cepheus/media",
+    "branch": "rippa-R-8150"
+  },
+  {
+    "remote": "github",
+    "repository": "sm8150-common/hardware_qcom-caf_sm8150_audio",
+    "target_path": "hardware/qcom-caf/sm8150-cepheus/audio",
+    "branch": "rippa-R-8150"
   }
 ]
