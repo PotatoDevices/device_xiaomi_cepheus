@@ -363,6 +363,9 @@ PRODUCT_COPY_FILES += \
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# QCOM
+OVERRIDE_QCOM_HARDWARE_VARIANT  := sm8150-cepheus
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
