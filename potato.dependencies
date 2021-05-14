@@ -1,11 +1,15 @@
 [
   {
-    "repository"  : "PotatoDevices/vendor_xiaomi_cepheus",
-    "target_path" : "vendor/xiaomi/cepheus"
+    "remote": "github",
+    "repository": "EcrosoftXiao/kernel_xiaomi_cepheus",
+    "target_path": "kernel/xiaomi/cepheus",
+    "branch": "eleven"
   },
   {
-    "repository"  : "PotatoDevices/kernel_xiaomi_cepheus",
-    "target_path" : "kernel/xiaomi/cepheus"
+    "remote": "github",
+    "repository": "Project-Fluid-Devices/vendor_xiaomi_cepheus",
+    "target_path": "vendor/xiaomi/cepheus",
+    "branch": "fluid-11"
   },
   {
     "remote": "github",
