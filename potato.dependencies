@@ -9,9 +9,9 @@
   },
   {
     "remote": "github",
-    "repository": "sm8150-common/hardware_xiaomi",
+    "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "evasi0n-wip"
+    "branch": "lineage-18.1"
   },
   {
     "remote": "gitlab",
