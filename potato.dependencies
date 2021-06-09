@@ -4,10 +4,8 @@
     "target_path" : "vendor/xiaomi/cepheus"
   },
   {
-    "remote": "github",
-    "repository": "EcrosoftXiao/kernel_xiaomi_cepheus",
-    "target_path": "kernel/xiaomi/cepheus",
-    "branch": "eleven"
+    "repository"  : "PotatoDevices/kernel_xiaomi_cepheus",
+    "target_path" : "kernel/xiaomi/cepheus"
   },
   {
     "remote": "github",
